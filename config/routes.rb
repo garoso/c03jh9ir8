@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  root 'actors#index'
-  
+  get '/actors' => 'actors#index'
   resource :actors, only: [:new, :create]
 
   # The priority is based upon order of creation: first created -> highest priority.
